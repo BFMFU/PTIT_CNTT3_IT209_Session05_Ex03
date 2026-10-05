@@ -245,6 +245,6 @@ git log --graph --oneline
 
 ---
 
-## 🎯 Kết Luận
+##  Kết Luận
 - Tiến trình Rebase đã diễn ra thành công qua 2 chặng xử lý xung đột thủ công mà không làm mất thông tin hay phá hỏng cấu trúc của nhánh chính `main`.
 - Lịch sử Git của nhánh `feature-api` đã được làm phẳng hoàn toàn, nối tiếp trực tiếp phía sau commit mới nhất của `main`.
