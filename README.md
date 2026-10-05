@@ -1,6 +1,6 @@
 # Báo Cáo Bài 3: Xử Lý Xung Đột Phức Tạp Trong Quá Trình Rebase
 
-## 📌 Thông Tin Bài Tập
+## Thông Tin Bài Tập
 - **Môn học**: IT209 - Quản lý phiên bản mã nguồn với Git
 - **Đường dẫn bài nộp**: `homework/session_05/ex3/`
 - **Mục tiêu**:
@@ -10,7 +10,7 @@
 
 ---
 
-## 🛠️ 1. Khởi Tạo Bối Cảnh & Lịch Sử Nhánh (Setup)
+## 1. Khởi Tạo Bối Cảnh & Lịch Sử Nhánh (Setup)
 
 ### Step 1: Tạo commit ban đầu trên nhánh `main`
 Khởi tạo tệp `config.json` trên nhánh `main`:
@@ -52,7 +52,7 @@ git checkout main
   git commit -am "add env config"
   ```
 
-### 🌳 Cây Lịch Sử Git Trước Khi Rebase (`git log --graph --oneline --all`)
+### Cây Lịch Sử Git Trước Khi Rebase (`git log --graph --oneline --all`)
 ```text
 * ec8f0c5 add env config
 * 938b6be update port on main
@@ -65,7 +65,7 @@ git checkout main
 
 ---
 
-## ⚡ 2. Tiến Trình Rebase & Giải Quyết Xung Đột Từng Bước
+## 2. Tiến Trình Rebase & Giải Quyết Xung Đột Từng Bước
 
 Chuyển sang nhánh `feature-api` và bắt đầu Rebase lên `main`:
 ```bash
@@ -75,7 +75,7 @@ git rebase main
 
 ---
 
-### 🚨 Chặng 1: Conflict khi áp dụng Commit 1/2 (`feat: change port`)
+### Chặng 1: Conflict khi áp dụng Commit 1/2 (`feat: change port`)
 
 #### 1. Thông báo lỗi từ Git:
 ```text
@@ -133,7 +133,7 @@ git rebase --continue
 
 ---
 
-### 🚨 Chặng 2: Conflict khi áp dụng Commit 2/2 (`feat: enable debug`)
+### Chặng 2: Conflict khi áp dụng Commit 2/2 (`feat: enable debug`)
 
 #### 1. Thông báo lỗi từ Git:
 ```text
@@ -195,7 +195,7 @@ Successfully rebased and updated refs/heads/feature-api.
 
 ---
 
-## 💡 3. So Sánh Giải Quyết Xung Đột: Merge vs Rebase
+## 3. So Sánh Giải Quyết Xung Đột: Merge vs Rebase
 
 | Tiêu chí | Git Merge | Git Rebase |
 | :--- | :--- | :--- |
@@ -206,7 +206,7 @@ Successfully rebased and updated refs/heads/feature-api.
 
 ---
 
-## ✅ 4. Kiểm Tra Kết Quả Sau Khi Hoàn Thành
+## 4. Kiểm Tra Kết Quả Sau Khi Hoàn Thành
 
 ### 1. Kiểm tra trạng thái working directory (`git status`)
 ```bash
